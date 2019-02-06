@@ -616,9 +616,10 @@ Each MXBean instance is required to be registered with a unique object name, whi
       <pubDate>Thu, 19 Mar 2015 12:53:26 -0400</pubDate>
       
       <guid>/mongo-java-driver/3.10/driver-async/tutorials/ssl/</guid>
-      <description>TLS/SSL The Java driver supports TLS/SSL connections to MongoDB servers using the underlying support for TLS/SSL provided by the JDK. To use TLS/SSL, you must configure the asynchronous driver to use Netty.
-Specify TLS/SSL and Netty Configuration Note If your application requires Netty, it must explicitly add a dependency to Netty artifacts. The driver is currently tested against Netty 4.1.
- Via Connection String To configure the driver to use Netty, include the ssl=true and streamType=netty options in the connection string, as in:</description>
+      <description>TLS/SSL The asynchronous Java driver supports TLS/SSL connections to MongoDB servers using the underlying support for TLS/SSL provided by the JDK.
+In its default configuration, the asynchronous driver is supported on Java 8+ when TLS/SSL is enabled.
+Otherwise, applications must configure the asynchronous driver to use Netty.
+Specify TLS/SSL and Netty Configuration Note If your application requires Netty, it must explicitly add a dependency to Netty artifacts. The driver is currently tested against Netty 4.</description>
     </item>
     
     <item>
